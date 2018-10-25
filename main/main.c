@@ -25,9 +25,9 @@ void app_main(void) {
 			.password = "espespesp",
 			.channel = 1,
 			.authmode = WIFI_AUTH_WPA2_PSK,
-			.ssid_hidden = 0,
-			.max_connection = 2,
-			.beacon_interval = 100
+			.ssid_hidden = 1,
+			.max_connection = 0,
+			.beacon_interval = 60000
 		}
 	};
 
