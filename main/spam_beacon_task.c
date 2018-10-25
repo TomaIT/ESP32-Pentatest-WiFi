@@ -47,7 +47,7 @@ void spam_beacon_task(void *vParameters){
 			count_OK=0;
 			timesleep++;
 		}
-		if(err==ESP_OK){
+		else{
 			count_OK++;
 			if(count_OK>=1024){
 				timesleep--;
