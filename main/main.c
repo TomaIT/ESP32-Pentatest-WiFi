@@ -20,14 +20,14 @@ void app_main(void) {
 	ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_AP));
 	wifi_config_t ap_config = {
 		.ap = {
-			.ssid = "esp32-beaconspam",
+			.ssid = "esp32",
 			.ssid_len = 0,
-			.password = "dummypassword",
+			.password = "espespesp",
 			.channel = 1,
 			.authmode = WIFI_AUTH_WPA2_PSK,
-			.ssid_hidden = 1,
-			.max_connection = 0,
-			.beacon_interval = 60000
+			.ssid_hidden = 0,
+			.max_connection = 2,
+			.beacon_interval = 100
 		}
 	};
 
